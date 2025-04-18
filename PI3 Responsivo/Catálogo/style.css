@@ -1,0 +1,155 @@
+/*BARRA DE PESQUISA*/
+body{
+    background: #4467bb;
+}
+.pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5em;
+}
+.catalogo__titulo{
+    font-size: 25px;
+    color: var(--cor-azul);
+    font-weight: 700;
+    padding: 1em;
+    text-align: center;
+    color: var(--branco);
+}
+#searchInput {
+    padding: 12px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#searchButton {
+    padding: 10px 15px;
+    background-color: var(--cor-laranja);
+    color: var(--branco);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+ 
+/*RESPOSTA DA PESQUISA*/
+
+#bookList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book {
+    width: 180px;
+    margin: 10px;
+    padding: 30px;
+    border: 3px solid #2b4c99;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.book img {
+    min-width: 150px;
+    height: auto;
+    padding-top: 1em;
+    text-align: center;
+    
+}
+
+#bookDetails {
+    padding: 20px;
+}
+
+#bookDetails img {
+    max-width: 300px;
+    height: auto;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.623);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 700px;
+    position: relative;
+    font-size: 16px
+    
+}
+
+.popup-content img {
+    max-width: 200px;
+    height: auto;
+    margin-left: 40%;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    font-size: 16px;
+    right: 10px;
+    padding: 10px 15px;
+    background-color: #cccccc;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.blocoLivros{
+    background: var(--degrade);
+    border-radius: 30px;
+    margin-top:  50px;
+    margin: 40px 20px;
+    padding: 1.5em;
+    min-height: 400px ;
+}
+
+
+
+@media screen and (min-width: 1024px){
+    .catalogo__titulo{
+        font-size: 40px;
+    }
+    .book {
+        width: 180px;
+        margin: 15px;
+        padding: 20px;
+        border: 3px solid #2b4c99;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .blocoLivros{
+        background: var(--degrade);
+        border-radius: 30px;
+        margin-top:  50px;
+        margin: 40px 50px;
+        padding: 1.5em;
+        min-height: 700px ;
+    }
+    
+}
+
+@media screen and (min-width: 1728px){
+    .catalogo__titulo{
+        font-size: 50px;
+    }
+    #searchInput {
+        width: 40%;
+    }
+ 
+}

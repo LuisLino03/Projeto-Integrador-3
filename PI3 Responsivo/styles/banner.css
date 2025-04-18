@@ -1,0 +1,46 @@
+.banner{
+    background:var(--degrade) ;
+    color: var(--cor-azul);
+    text-align: center;
+    padding: 2.5em 2em;
+}
+.banner__titulo{
+    font-size: 16px;
+    font-weight: 700;
+}
+.banner__texto{
+    font-weight: 500;
+    padding: 1em 0;
+}
+
+@media screen and (min-width: 1024px){
+    .banner__titulo{
+        font-size: 36px;
+    }
+    .banner{
+        padding: 3em 10em;
+    }
+    .banner__texto{
+        font-weight: 500;
+        padding: 1em 0;
+        line-height: 1.4;
+    }
+}
+
+
+@media screen and (min-width: 1728px){
+    .banner__pesquisa{
+        width: 35%;
+    }
+
+
+    .banner{
+        padding: 3em 30em;
+    }
+    .banner__texto{
+        font-weight: 500;
+        padding: 1em 0;
+        line-height: 1.4;
+    }
+    
+}
