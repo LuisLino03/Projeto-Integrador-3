@@ -1,0 +1,113 @@
+
+.rodape{
+    background-color: #000;
+    padding: 1em;
+}
+.lista__rodape__titulo{
+    margin: .5em 0;
+    color: #858585;
+    font-size: 16px;
+}
+.lista__rodape__item{
+    font-size: 14px;
+    color: #535252;
+    margin-bottom: 1em;
+}
+.logoRodape {
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    margin-bottom: 3em;
+}
+.logoRodape h1{
+    color: #fff;
+    width: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+.logoRodape img {
+    display: flex;
+    align-items:center ;
+    width: 100px;
+}
+
+
+
+@media screen and (min-width: 1024px){
+    .rodape{
+        display: flex;
+        justify-content: space-around;
+    }
+    .lista__rodape{
+        display: block;
+
+    }
+    .lista__rodape__titulo{
+        margin-bottom: 1em;
+        color: #858585;
+        font-size: 14px;
+    }
+    .lista__rodape__item{
+        display: block;
+    }
+    .lista__rodape__link{
+        text-decoration: none;
+        color: #474646;
+        margin-left: .6em;
+    }
+    .rodape__titulo{
+        font-size: 24px;
+    }
+    .lista__rodape{
+        border-left: 1px solid #858585;
+        padding-left: 1em;
+    }
+    .logoRodape{
+        margin-top: 3em;
+    }
+    .logoRodape h1{
+        color: #fff;
+        width: 100px;
+        text-align: center;
+        font-size: 40px;
+    }
+    .logoRodape img {
+        display: flex;
+        align-items:center;
+        width: 150px;
+    }
+}
+
+
+@media screen and (min-width: 1728px){
+    .lista__rodape__item{
+        display: block;
+    }
+    .lista__rodape{
+        border-left: 1px solid #858585;
+        padding-left: 1em;
+    }
+    .rodape{
+        padding: 2em 0;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .lista__rodape__titulo{
+        margin-bottom: 1em;
+    }
+    .logoRodape{
+        
+        margin: 3em 0 0 5em;
+    }
+    .logoRodape h1{
+        color: #fff;
+        width: 100px;
+        text-align: center;
+        font-size: 40px;
+    }
+    .logoRodape img {
+        display: flex;
+        align-items:center;
+        width: 150px;
+    }
+}

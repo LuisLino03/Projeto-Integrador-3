@@ -1,0 +1,24 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/footer.css");
+:root{
+    --cor-de-fundo:#ebecee;
+    --branco: #ffffff;
+    --cor-laranja: #eb9b00;
+    --degrade: linear-gradient(90deg,#ffffff, #e1e2e2);
+    --cor-azul: #0a4b7c;
+    --font-principal: "Poppins";
+    --font-secundaria: "Josefin Sans"
+}
+body{
+    background-color: var(--cor-azul);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+.container__botao:checked ~ .lista-menu{
+    display: block;
+}
