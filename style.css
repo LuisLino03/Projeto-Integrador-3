@@ -1,94 +1,24 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/footer.css");
+:root{
+    --cor-de-fundo:#ebecee;
+    --branco: #ffffff;
+    --cor-laranja: #eb9b00;
+    --degrade: linear-gradient(90deg,#ffffff, #e1e2e2);
+    --cor-azul: #0a4b7c;
+    --font-principal: "Poppins";
+    --font-secundaria: "Josefin Sans"
 }
-
-
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
+body{
+    background-color: var(--cor-azul);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
-
-#searchInput {
-    padding: 10px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-#searchButton {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#bookList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-.book {
-    width: 200px;
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.book img {
-    max-width: 150px;
-    height: auto;
-}
-
-#bookDetails {
-    padding: 20px;
-}
-
-#bookDetails img {
-    max-width: 300px;
-    height: auto;
-}
-
-.popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.popup-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 600px;
-    position: relative;
-}
-
-.popup-content img {
-    max-width: 200px;
-    height: auto;
-}
-
-.close-popup {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 5px 10px;
-    background-color: #ccc;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+.container__botao:checked ~ .lista-menu{
+    display: block;
 }
